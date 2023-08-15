@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col shadow-lg p-3 mb-5 bg-body rounded">
+            <form asp-action="INSERT METHOD HERE" class="w-75 mx-auto">
+                <h1>Register</h1>
+                <div class="form-floating mb-3 shadow p-3">
+                    <input type="text" class="form-control" id="FirstName" placeholder="Please Enter Your First Name"
+                        asp-for="FirstName">
+                    <label for="FirstName">First Name: </label>
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+                <div class="form-floating mb-3 shadow p-3">
+                    <input type="text" class="form-control" id="LastName" placeholder="Please Enter Your Last Name"
+                        asp-for="LastName">
+                    <label for="LastName">Last Name: </label>
+                    <span asp-validation-for="LastName"></span>
+                </div>
+                <div class="form-floating mb-3 shadow p-3">
+                    <input type="text" class="form-control" id="Email" placeholder="Please Enter Your Email"
+                        asp-for="Email">
+                    <label for="Email">Email: </label>
+                    <span asp-validation-for="LastName"></span>
+                </div>
+                <div class="form-floating mb-3 shadow p-3">
+                    <input type="text" class="form-control" id="Password" placeholder="Create Your Password"
+                        asp-for="Password">
+                    <label for="Password">Password</label>
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div class="form-floating mb-3 shadow p-3">
+                    <input type="text" class="form-control" id="ConPassword" placeholder="Confirm Password"
+                        asp-for="ConPassword">
+                    <label for="ConPassword">Confirm Password: </label>
+                    <span asp-validation-for="ConPassword"></span>
+                </div>
+                <div class="mb-3 w-25 mx-auto">
+                    <button class="btn btn-outline-primary">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

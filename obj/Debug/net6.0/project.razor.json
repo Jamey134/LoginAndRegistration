@@ -18394,6 +18394,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/jamey134/Desktop/Coding Dojo/C#/ORM/LoginAndRegistration/Views/Home/Registration.cshtml",
+      "TargetPath": "Views\\Home\\Registration.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/jamey134/Desktop/Coding Dojo/C#/ORM/LoginAndRegistration/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
