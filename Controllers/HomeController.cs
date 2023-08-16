@@ -9,9 +9,12 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    private MyContext db;
+
+    public HomeController(ILogger<HomeController> logger, MyContext context)
     {
         _logger = logger;
+        db = context;
     }
 
     [HttpGet("")]
@@ -21,21 +24,25 @@ public class HomeController : Controller
     }
 
 
-[HttpPost("/register")]
+    [HttpPost("/register")]
 
-public IActionResult Register(User newUser)
-{
-    if(ModelState.IsValid)
+    public IActionResult Register(User newUser)
     {
-        return View("Index");
-    }
-    PasswordHasher<User> hasher = new PasswordHasher<User>();
+        if(ModelState.IsValid)
+        {
+            return View("Index");
+        }
+        PasswordHasher<User> hasher = new PasswordHasher<User>();
 
-    newUser.Password = hasher.HashPassword(newUser, newUser.Password);
-    
-    
-    return RedirectToAction();
-}
+        newUser.Password = hasher.HashPassword(newUser, newUser.Password);
+        
+        db.Users.Add(newUser);
+        db.SaveChanges();
+        HttpContext.Session.SetInt32("UUID", newUser.UserId);
+        
+        return RedirectToAction("Dashboard");
+        
+    }
 
 
 

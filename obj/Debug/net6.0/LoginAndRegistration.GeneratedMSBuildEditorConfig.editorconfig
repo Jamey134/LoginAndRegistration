@@ -15,16 +15,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/jamey134/Desktop/Coding Dojo/C#/ORM/LoginAndRegistration
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/jamey134/Desktop/Coding Dojo/C\#/ORM/LoginAndRegistration/Views/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/jamey134/Desktop/Coding Dojo/C\#/ORM/LoginAndRegistration/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jamey134/Desktop/Coding Dojo/C\#/ORM/LoginAndRegistration/Views/Home/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Mb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/jamey134/Desktop/Coding Dojo/C\#/ORM/LoginAndRegistration/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamey134/Desktop/Coding Dojo/C\#/ORM/LoginAndRegistration/Views/Home/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9fTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/jamey134/Desktop/Coding Dojo/C\#/ORM/LoginAndRegistration/Views/Home/_Registration.cshtml]
