@@ -1,3 +1,5 @@
+@model User
+
 <div class="container">
     <div class="row">
         <div class="col shadow-lg p-3 mb-5 bg-body rounded">
@@ -24,14 +26,14 @@
                 <div class="form-floating mb-3 shadow p-3">
                     <input type="text" class="form-control" id="Password" placeholder="Create Your Password"
                         asp-for="Password">
-                    <label for="Password">Password</label>
+                    <label for="Password">Password: </label>
                     <span asp-validation-for="Password"></span>
                 </div>
                 <div class="form-floating mb-3 shadow p-3">
-                    <input type="text" class="form-control" id="ConPassword" placeholder="Confirm Password"
-                        asp-for="ConPassword">
-                    <label for="ConPassword">Confirm Password: </label>
-                    <span asp-validation-for="ConPassword"></span>
+                    <input type="text" class="form-control" id="PasswordConfirm" placeholder="Confirm Password"
+                        asp-for="PasswordConfirm">
+                    <label for="PasswordConfirm">Confirm Password: </label>
+                    <span asp-validation-for="PasswordConfirm"></span>
                 </div>
                 <div class="mb-3 w-25 mx-auto">
                     <button class="btn btn-outline-primary">Register</button>

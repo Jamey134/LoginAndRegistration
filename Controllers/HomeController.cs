@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using LoginAndRegistration.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace LoginAndRegistration.Controllers;
 
@@ -13,10 +14,38 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [HttpGet("")]
     public IActionResult Index()
     {
         return View();
     }
+
+
+[HttpPost("/register")]
+
+public IActionResult Register(User newUser)
+{
+    if(ModelState.IsValid)
+    {
+        return View("Index");
+    }
+    PasswordHasher<User> hasher = new PasswordHasher<User>();
+
+    newUser.Password = hasher.HashPassword(newUser, newUser.Password);
+    
+    
+    return RedirectToAction();
+}
+
+
+
+
+
+
+
+
+
+
 
     public IActionResult Privacy()
     {
